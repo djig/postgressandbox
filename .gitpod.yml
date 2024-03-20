@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: >
+        pip install psycopg2-binary &&
+        echo "Database and table setup completed."
+    command: python query_db.py
